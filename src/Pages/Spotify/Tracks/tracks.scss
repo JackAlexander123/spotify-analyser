@@ -1,0 +1,71 @@
+.tracks-content {
+  #filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  .tracks-wrapper {
+    border: 1px solid #333;
+  }
+
+  .tracks-header {
+    display: flex;
+    background-color: #d5d5d5;
+
+    p {
+      font-weight: 700;
+      margin: 0;
+      padding: 15px;
+
+      &:first-of-type {
+        flex: 1 0 300px;
+        max-width: 300px;
+        border-right: 1px solid #333;
+      }
+
+      &:nth-child(2) {
+        flex: 1 0 300px;
+        max-width: 300px;
+        border-right: 1px solid #333;
+      }
+    }
+  }
+
+  .tracks {
+    border-top: 1px solid #333;
+
+    .track {
+      border-bottom: 1px solid #333;
+      display: flex;
+
+      p {
+        margin: 0;
+        padding: 15px;
+
+        &:first-of-type {
+          flex: 1 0 300px;
+          max-width: 300px;
+          border-right: 1px solid #333;
+        }
+
+        &:nth-child(2) {
+          flex: 1 0 300px;
+          max-width: 300px;
+          border-right: 1px solid #333;
+        }
+
+        span {
+          &:not(:last-child) {
+            &:after {
+              content: ',';
+              margin-right: 5px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

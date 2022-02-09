@@ -1,0 +1,20 @@
+.spotify-section {
+  display: flex;
+
+  .content {
+    flex: 1;
+    background-color: #fefefe;
+    color: #000;
+    padding: 20px;
+
+    .chart {
+      height: 800px;
+      overflow: scroll;
+    }
+  }
+
+  .sidebar {
+    flex: 1 0 300px;
+    max-width: 300px;
+  }
+}
